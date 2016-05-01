@@ -2,6 +2,7 @@
 
 using Xamarin.Forms;
 using Core.Views.Switch;
+using Core.Views.Keyboard;
 
 namespace Core.Views
 {
@@ -15,7 +16,8 @@ namespace Core.Views
 				Intent = TableIntent.Menu, 
 				Root = new TableRoot() {
 					new TableSection() {
-						GetTextCell("Desabilitando SwitchCell", typeof(SwitchCellView), Open)
+						GetTextCell("Desabilitando SwitchCell", typeof(SwitchCellView), Open), 
+						GetTextCell("Tipos de teclado", typeof(KeyboardTypeView), Open)
 					}
 				}
 			};
