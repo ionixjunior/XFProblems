@@ -8,6 +8,8 @@ namespace Core.Views.Keyboard
 	{
 		public KeyboardTypeView ()
 		{
+			Title = "Tipos de teclado";
+
 			Content = new TableView () {
 				Intent = TableIntent.Form, 
 				Root = new TableRoot() {
