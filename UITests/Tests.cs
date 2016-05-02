@@ -28,7 +28,7 @@ namespace UITests
 		[Test]
 		public void AppLaunches ()
 		{
-			app.Screenshot ("First screen.");
+			app.Tap (e => e.Marked("btnUiTests"));
 		}
 	}
 }
