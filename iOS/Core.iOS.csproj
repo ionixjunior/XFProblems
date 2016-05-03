@@ -118,4 +118,9 @@
       <Name>Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\android.png" />
+    <BundleResource Include="Resources\ios.png" />
+    <BundleResource Include="Resources\windowsphone.png" />
+  </ItemGroup>
 </Project>

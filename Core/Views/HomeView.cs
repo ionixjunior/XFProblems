@@ -4,6 +4,7 @@ using Xamarin.Forms;
 using Core.Views.Switch;
 using Core.Views.Keyboard;
 using Core.Views.UITest;
+using Core.Views.Lists;
 
 namespace Core.Views
 {
@@ -26,7 +27,8 @@ namespace Core.Views
 						Root = new TableRoot() {
 							new TableSection() {
 								GetTextCell("Desabilitando SwitchCell", typeof(SwitchCellView), "tclSwitchCell", Open), 
-								GetTextCell("Tipos de teclado", typeof(KeyboardTypeView), "tclKeyboardType", Open)
+								GetTextCell("Tipos de teclado", typeof(KeyboardTypeView), "tclKeyboardType", Open), 
+								GetTextCell("Listas", typeof(ListsView), "tclLists", Open)
 							}
 						}
 					}, 
