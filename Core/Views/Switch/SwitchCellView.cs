@@ -13,18 +13,19 @@ namespace Core.Views.Switch
 			Content = new TableView() {
 				Root = new TableRoot() {
 					new TableSection() {
-						GetSwitchCell("Habilitado", true), 
-						GetSwitchCell("Desabilitado", false)
+						GetSwitchCell("Habilitado", true, "sclEnabled"), 
+						GetSwitchCell("Desabilitado", false, "sclDisabled")
 					}
 				}
 			};
 		}
 
-		private SwitchCell GetSwitchCell(string text, bool isEnabled)
+		private SwitchCell GetSwitchCell(string text, bool isEnabled, string automationId)
 		{
 			return new SwitchCell () {
 				Text = text, 
 				IsEnabled = isEnabled, 
+				AutomationId = automationId, 
 				On = true
 			};
 		}

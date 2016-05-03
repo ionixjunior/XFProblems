@@ -17,8 +17,8 @@ namespace Core.iOS
 
 			Xamarin.Forms.Forms.ViewInitialized += (object sender, Xamarin.Forms.ViewInitializedEventArgs e) => {
 				// http://developer.xamarin.com/recipes/testcloud/set-accessibilityidentifier-ios/
-				if (null != e.View.StyleId) {
-					e.NativeView.AccessibilityIdentifier = e.View.StyleId;
+				if (null != e.View.AutomationId) {
+					e.NativeView.AccessibilityIdentifier = e.View.AutomationId;
 				}
 			};
 

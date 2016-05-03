@@ -26,9 +26,30 @@ namespace UITests
 		}
 
 		[Test]
-		public void AppLaunches ()
+		public void SampleOk ()
 		{
 			app.Tap (e => e.Marked("btnUiTests"));
+			app.EnterText (e => e.Marked("etr1"), "Valor  1");
+			app.EnterText (e => e.Marked("etr2"), "Valor  2");
+		}
+
+		[Test]
+		public void SampleSwitchCellError ()
+		{
+			app.Tap (e => e.Marked("tclSwitchCell"));
+		}
+
+		[Test]
+		public void SampleSwitchCellOk ()
+		{
+			app.Tap (e => e.Text("Desabilitando SwitchCell"));
+		}
+
+		[Test]
+		public void ToolbarItemOk()
+		{
+			app.Tap (e => e.Marked("tbiTest"));
+			app.Tap (e => e.Text("Fechar"));
 		}
 	}
 }

@@ -3,6 +3,7 @@
 using Xamarin.Forms;
 using Core.Views.Switch;
 using Core.Views.Keyboard;
+using Core.Views.UITest;
 
 namespace Core.Views
 {
@@ -12,14 +13,20 @@ namespace Core.Views
 		{
 			Title = "Home";
 
+			ToolbarItems.Add (new ToolbarItem() {
+				Text = "Teste", 
+				Command = new Command(() => { DisplayAlert("Título", "Mensagem", "Fechar"); }), 
+				AutomationId = "tbiTest"
+			});
+
 			Content = new StackLayout() {
 				Children = {
 					new TableView() {
 						Intent = TableIntent.Menu, 
 						Root = new TableRoot() {
 							new TableSection() {
-								GetTextCell("Desabilitando SwitchCell", typeof(SwitchCellView), Open), 
-								GetTextCell("Tipos de teclado", typeof(KeyboardTypeView), Open)
+								GetTextCell("Desabilitando SwitchCell", typeof(SwitchCellView), "tclSwitchCell", Open), 
+								GetTextCell("Tipos de teclado", typeof(KeyboardTypeView), "tclKeyboardType", Open)
 							}
 						}
 					}, 
@@ -28,11 +35,12 @@ namespace Core.Views
 			};
 		}
 
-		private TextCell GetTextCell(string text, Type page, EventHandler eventHandler)
+		private TextCell GetTextCell(string text, Type page, string automationId, EventHandler eventHandler)
 		{
 			TextCell textCell = new TextCell () {
 				BindingContext = page, 
-				Text = text
+				Text = text, 
+				AutomationId = automationId
 			};
 			textCell.Tapped += eventHandler;
 
@@ -52,10 +60,10 @@ namespace Core.Views
 		{
 			Button button = new Button () {
 				Text = "Para UI Tests", 
-				StyleId = "btnUiTests"
+				AutomationId = "btnUiTests"
 			};
 			button.Clicked += (object sender, EventArgs e) => {
-				Navigation.PushAsync(new KeyboardTypeView());
+				Navigation.PushAsync(new TestFormView());
 			};
 
 			return button;
