@@ -9,6 +9,8 @@ namespace Core.Models
 		public string Detail { get; set; }
 
 		public string ImageName { get; set; }
+
+		public string Version { get; set; }
 	}
 }
 

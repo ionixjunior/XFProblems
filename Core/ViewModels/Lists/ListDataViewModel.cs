@@ -25,19 +25,22 @@ namespace Core.ViewModels.Lists
 			Data.Add (new DataModel() {
 				Text = "iOS", 
 				Detail = "Apple", 
-				ImageName = "ios.png"
+				ImageName = "ios.png", 
+				Version = "v9.3"
 			});
 
 			Data.Add (new DataModel() {
 				Text = "Android", 
 				Detail = "Google", 
-				ImageName = "android.png"
+				ImageName = "android.png", 
+				Version = "v6.0"
 			});
 
 			Data.Add (new DataModel() {
 				Text = "Windows Phone", 
 				Detail = "Microsoft", 
-				ImageName = "windowsphone.png"
+				ImageName = "windowsphone.png", 
+				Version = "v8.1"
 			});
 		}
 	}

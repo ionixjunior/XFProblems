@@ -25,6 +25,10 @@ namespace Core.Views.Lists
 						new TextCell() {
 							Text = "Texto, descrição e imagem", 
 							Command = new Command(() => NavigateTo(typeof(List3View)))
+						}, 
+						new TextCell() {
+							Text = "Customizado", 
+							Command = new Command(() => NavigateTo(typeof(List4View)))
 						}
 					}
 				}
