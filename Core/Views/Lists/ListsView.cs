@@ -29,6 +29,10 @@ namespace Core.Views.Lists
 						new TextCell() {
 							Text = "Customizado", 
 							Command = new Command(() => NavigateTo(typeof(List4View)))
+						}, 
+						new TextCell() {
+							Text = "Nativo", 
+							Command = new Command(() => NavigateTo(typeof(List5View)))
 						}
 					}
 				}
