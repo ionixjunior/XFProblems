@@ -53,6 +53,8 @@
     <Compile Include="Views\Lists\List4View.cs" />
     <Compile Include="Controls\NativeListView.cs" />
     <Compile Include="Views\Lists\List5View.cs" />
+    <Compile Include="Views\MessagingCenter\MessagingCenterView.cs" />
+    <Compile Include="Models\ClickModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.2.0.31\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.2.0.31\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -78,5 +80,6 @@
     <Folder Include="ViewModels\Lists\" />
     <Folder Include="Models\" />
     <Folder Include="Controls\" />
+    <Folder Include="Views\MessagingCenter\" />
   </ItemGroup>
 </Project>

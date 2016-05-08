@@ -5,6 +5,7 @@ using Core.Views.Switch;
 using Core.Views.Keyboard;
 using Core.Views.UITest;
 using Core.Views.Lists;
+using Core.Views.MessagingCenter;
 
 namespace Core.Views
 {
@@ -28,7 +29,8 @@ namespace Core.Views
 							new TableSection() {
 								GetTextCell("Desabilitando SwitchCell", typeof(SwitchCellView), "tclSwitchCell", Open), 
 								GetTextCell("Tipos de teclado", typeof(KeyboardTypeView), "tclKeyboardType", Open), 
-								GetTextCell("Listas", typeof(ListsView), "tclLists", Open)
+								GetTextCell("Listas", typeof(ListsView), "tclLists", Open), 
+								GetTextCell("Messaging Center", typeof(MessagingCenterView), "tclMessagingCenter", Open)
 							}
 						}
 					}, 
