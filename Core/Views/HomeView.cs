@@ -7,6 +7,7 @@ using Core.Views.UITest;
 using Core.Views.Lists;
 using Core.Views.MessagingCenter;
 using Core.Views.ImgCell;
+using Core.Views.Tabs;
 
 namespace Core.Views
 {
@@ -32,7 +33,8 @@ namespace Core.Views
 								GetTextCell("Tipos de teclado", typeof(KeyboardTypeView), "tclKeyboardType", Open), 
 								GetTextCell("Listas", typeof(ListsView), "tclLists", Open), 
 								GetTextCell("Messaging Center", typeof(MessagingCenterView), "tclMessagingCenter", Open), 
-								GetTextCell("ImageCell", typeof(ImageCellView), "tclImageCell", Open)
+								GetTextCell("ImageCell", typeof(ImageCellView), "tclImageCell", Open), 
+								GetTextCell("Abas", typeof(TabsView), "tclTabs", OpenModal)
 							}
 						}
 					}, 
@@ -60,6 +62,15 @@ namespace Core.Views
 
 			Page page = (Page)Activator.CreateInstance (pageType);
 			Navigation.PushAsync (page);
+		}
+
+		private void OpenModal(object sender, EventArgs args)
+		{
+			TextCell textCell = (TextCell)sender;
+			Type pageType = (Type)textCell.BindingContext;
+
+			Page page = (Page)Activator.CreateInstance (pageType);
+			Navigation.PushModalAsync (page);
 		}
 
 		private Button GetButtonUiTests()

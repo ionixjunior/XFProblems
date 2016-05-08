@@ -57,6 +57,9 @@
     <Compile Include="Models\ClickModel.cs" />
     <Compile Include="ViewModels\MessagingCenter\MessagingCenterViewModel.cs" />
     <Compile Include="Views\ImgCell\ImageCellView.cs" />
+    <Compile Include="Views\Tabs\TabsView.cs" />
+    <Compile Include="Views\Tabs\Tab1View.cs" />
+    <Compile Include="Views\Tabs\Tab2View.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.2.0.31\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.2.0.31\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -85,5 +88,6 @@
     <Folder Include="Views\MessagingCenter\" />
     <Folder Include="ViewModels\MessagingCenter\" />
     <Folder Include="Views\ImgCell\" />
+    <Folder Include="Views\Tabs\" />
   </ItemGroup>
 </Project>
