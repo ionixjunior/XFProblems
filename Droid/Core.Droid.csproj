@@ -109,6 +109,9 @@
     <AndroidResource Include="Resources\drawable\ios.png" />
     <AndroidResource Include="Resources\drawable\windowsphone.png" />
     <AndroidResource Include="Resources\layout\NativeListViewCell.axml" />
+    <AndroidResource Include="Resources\drawable\current_location.png" />
+    <AndroidResource Include="Resources\drawable\map.png" />
+    <AndroidResource Include="Resources\drawable\waiting_time.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

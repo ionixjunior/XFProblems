@@ -112,6 +112,9 @@
     <Content Include="android.png" />
     <Content Include="ios.png" />
     <Content Include="windowsphone.png" />
+    <Content Include="current_location.png" />
+    <Content Include="map.png" />
+    <Content Include="waiting_time.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

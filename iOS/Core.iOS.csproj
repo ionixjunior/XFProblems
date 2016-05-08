@@ -125,6 +125,9 @@
     <BundleResource Include="Resources\android.png" />
     <BundleResource Include="Resources\ios.png" />
     <BundleResource Include="Resources\windowsphone.png" />
+    <BundleResource Include="Resources\current_location.png" />
+    <BundleResource Include="Resources\map.png" />
+    <BundleResource Include="Resources\waiting_time.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Renders\" />

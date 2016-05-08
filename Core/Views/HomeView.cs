@@ -6,6 +6,7 @@ using Core.Views.Keyboard;
 using Core.Views.UITest;
 using Core.Views.Lists;
 using Core.Views.MessagingCenter;
+using Core.Views.ImgCell;
 
 namespace Core.Views
 {
@@ -30,7 +31,8 @@ namespace Core.Views
 								GetTextCell("Desabilitando SwitchCell", typeof(SwitchCellView), "tclSwitchCell", Open), 
 								GetTextCell("Tipos de teclado", typeof(KeyboardTypeView), "tclKeyboardType", Open), 
 								GetTextCell("Listas", typeof(ListsView), "tclLists", Open), 
-								GetTextCell("Messaging Center", typeof(MessagingCenterView), "tclMessagingCenter", Open)
+								GetTextCell("Messaging Center", typeof(MessagingCenterView), "tclMessagingCenter", Open), 
+								GetTextCell("ImageCell", typeof(ImageCellView), "tclImageCell", Open)
 							}
 						}
 					}, 
