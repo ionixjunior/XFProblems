@@ -76,7 +76,7 @@ namespace Core.Views
 		private Button GetButtonUiTests()
 		{
 			Button button = new Button () {
-				Text = "Para UI Tests", 
+				Text = "UI Tests", 
 				AutomationId = "btnUiTests"
 			};
 			button.Clicked += (object sender, EventArgs e) => {

@@ -10,6 +10,11 @@ namespace Core.Views.Tabs
 		{
 			Title = "Tab 1";
 
+			ToolbarItems.Add (new ToolbarItem() {
+				Text = "Fechar", 
+				Command = new Command(async () => { await Navigation.PopModalAsync(); })
+			});
+
 			Content = new StackLayout { 
 				Children = {
 					new Button () {
